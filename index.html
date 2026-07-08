@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Langit di Ujung Kenangan</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+html{scroll-behavior:smooth;}
+
+body{
+background-image:url('images/bg\ web1.png');
+background-size:cover;
+background-attachment:fixed;
+background-position:center;
+color:#333;
+line-height:1.8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(255, 255, 255, 0.5),rgba(0,0,0,.5)),
+url('images/bg\ web.png');
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero h1{font-size:4rem;}
+.hero p{margin-top:15px;font-size:1.2rem;}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 30px;
+background:white;
+color:black;
+text-decoration:none;
+border-radius:30px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 0 20px rgba(255,255,255,.7);
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:80px 20px;
+}
+
+.chapter{
+background:rgba(255,255,255,0.12);
+padding:20px;
+margin-bottom:15px;
+border-radius:15px;
+cursor:pointer;
+color:white;
+border:1px solid rgba(255,255,255,0.18);
+backdrop-filter:blur(6px);
+transition:.3s;
+}
+
+.chapter:hover{
+transform:translateY(-5px);
+background:rgba(255,255,255,0.22);
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+.social-icons a{
+display:inline-flex;
+justify-content:center;
+align-items:center;
+width:42px;
+height:42px;
+margin:0 6px;
+border-radius:50%;
+background:rgba(255, 230, 230, 0.08);
+color:white;
+text-decoration:none;
+}
+
+.chapter-view{
+display:none;
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+.back-btn{
+display:inline-block;
+margin-top:40px;
+padding:12px 25px;
+background:rgba(255,255,255,0.15);
+color:white;
+text-decoration:none;
+border-radius:10px;
+cursor:pointer;
+border:1px solid rgba(255,255,255,0.25);
+backdrop-filter:blur(6px);
+transition:.3s;
+}
+
+.back-btn:hover{
+background:rgba(255,255,255,0.25);
+transform:translateY(-3px);
+}
+.chapter-content{
+    max-width:900px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.chapter-image{
+    width:100%;
+    max-width:800px;
+    height:auto;
+    display:block;
+    margin:auto;
+    border-radius:12px;
+    object-fit:cover;
+    box-shadow:0 10px 30px rgb(255, 255, 255);
+}
+h2{
+    color:rgba(255,255,255,0.92);
+    text-shadow:0 2px 10px rgba(0,0,0,0.65);
+    letter-spacing:1px;
+}
+#sinopsis p{
+color:rgba(255,255,255,0.85);
+text-shadow:0 2px 8px rgba(0,0,0,0.6);
+}
+</style>
+</head>
+
+<body>
+
+<div id="home">
+
+<header class="hero">
+<div>
+<h1>Langit di Ujung Kenangan</h1>
+<p>Beberapa kenangan tidak pernah benar-benar hilang<br>mereka hanya menunggu untuk dipertemukan kembali</p>
+
+<a href="#sinopsis" class="btn">Mulai Membaca</a>
+</div>
+</header>
+
+<section id="sinopsis" class="container">
+<h2>Sinopsis</h2>
+<p>
+Di bawah langit Yogyakarta yang penuh kenangan, Aldric Kalaseva dan Selara Viondra dipertemukan kembali setelah bertahun-tahun terpisah oleh waktu dan jarak.
+Pertemuan sederhana di sebuah pameran seni perlahan membawa mereka pada jejak masa lalu yang telah lama terlupakan. Sebuah gelang biru, surat lama, buku gambar masa kecil, dan potongan kenangan tentang langit senja mulai membuka kembali cerita yang pernah hilang dari ingatan mereka.
+Di tengah hangatnya kedekatan yang tumbuh perlahan, Seva dan Sela menyadari satu hal yang mengejutkan:
+mereka bukan orang asing.
+Mereka pernah menjadi bagian penting dalam hidup satu sama lain.
+Namun semakin banyak kenangan yang kembali, semakin besar pula rahasia yang tersembunyi di balik perpisahan mereka dahulu. Karena masa lalu ternyata tidak hanya menyimpan tentang persahabatan dan cinta pertama—tetapi juga sesuatu yang sengaja dilupakan.
+Langit di Ujung Kenangan adalah kisah tentang cinta yang menemukan jalannya kembali, tentang dua hati yang dipertemukan takdir setelah lama saling kehilangan, dan tentang langit yang diam-diam tetap menjadi saksi atas janji yang belum pernah benar-benar selesai.
+</p>
+</section>
+
+<section class="container">
+<h2>Daftar Bab</h2>
+
+<div class="chapter" onclick="openChapter('hak-cipta')">
+Hak Cipta — Quotes Seva & Sela
+</div>
+
+<div class="chapter" onclick="openChapter('prolog')">
+Prolog — Langit Sore Di Kota Yang Diam-Diam Mengingat
+</div>
+
+<div class="chapter" onclick="openChapter('bab1')">
+Bab 1 — Pameran Di Taman Budaya
+</div>
+
+<div class="chapter" onclick="openChapter('bab2')">
+Bab 2 — Sepeda kecil & Langit sore
+</div>
+
+<div class="chapter" onclick="openChapter('bab3')">
+Bab 3 — Satu kelas lagi
+</div>
+
+<div class="chapter" onclick="openChapter('bab4')">
+Bab 4 — Judul Bab 4
+</div>
+
+<div class="chapter" onclick="openChapter('bab5')">
+Bab 5 — Judul Bab 5
+</div>
+</section>
+
+<footer>
+<div class="social-icons">
+<a href="https://wa.me/6281578811800"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://instagram.com/zlkrnainarchive"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@napis.zlkrnain"><i class="fa-brands fa-tiktok"></i></a>
+</div>
+<p>© 2026 Langit di Ujung Kenangan</p>
+</footer>
+
+</div>
+
+<!-- Hak Cipta -->
+<div id="hak-cipta" class="chapter-view">
+
+<div class="chapter-content">
+<img src="images/prolog/prolog (1).jpg" class="chapter-image">
+</div>
+
+<div style="display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:30px;">
+<a class="back-btn" onclick="backHome()">← Daftar Bab</a>
+<a class="back-btn" onclick="openChapter('prolog')">Prolog →</a>
+</div>
+
+</div>
+
+<!-- PROLOG -->
+<div id="prolog" class="chapter-view">
+
+<div class="chapter-content">
+<img src="images/prolog/prolog (2).jpg" class="chapter-image">
+<img src="images/prolog/prolog (3).jpg" class="chapter-image">
+<img src="images/prolog/prolog (4).jpg" class="chapter-image">
+<img src="images/prolog/prolog (5).jpg" class="chapter-image">
+<img src="images/prolog/prolog (6).jpg" class="chapter-image">
+<img src="images/prolog/prolog (7).jpg" class="chapter-image">
+<img src="images/prolog/prolog (8).jpg" class="chapter-image">
+</div>
+
+<div style="display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:30px;">
+<a class="back-btn" onclick="openChapter('hak-cipta')">← Hak Cipta</a>
+<a class="back-btn" onclick="backHome()">Daftar Bab</a>
+<a class="back-btn" onclick="openChapter('bab1')">Bab 1 →</a>
+</div>
+
+</div>
+
+<!-- BAB 1 -->
+<div id="bab1" class="chapter-view">
+
+<div class="chapter-content">
+<img src="images/Bab 1/bab 1 (2).jpg" class="chapter-image">
+<img src="images/Bab 1/bab 1 (3).jpg" class="chapter-image">
+<img src="images/Bab 1/bab 1 (4).jpg" class="chapter-image">
+<img src="images/Bab 1/bab 1 (1).jpg" class="chapter-image">
+</div>
+
+<div style="display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:30px;">
+<a class="back-btn" onclick="openChapter('prolog')">← prolog</a>
+<a class="back-btn" onclick="backHome()">Daftar Bab</a>
+<a class="back-btn" onclick="openChapter('bab2')">Bab 2 →</a>
+</div>
+
+</div>
+
+
+<!-- BAB 2 -->
+<div id="bab2" class="chapter-view">
+
+<div class="chapter-content">
+<img src="images/Bab 2/bab 2 (1).jpg" class="chapter-image">
+<img src="images/Bab 2/bab 2 (2).jpg" class="chapter-image">
+<img src="images/Bab 2/bab 2 (3).jpg" class="chapter-image">
+<img src="images/Bab 2/bab 2 (4).jpg" class="chapter-image">
+<img src="images/Bab 2/bab 2 (5).jpg" class="chapter-image">
+<img src="images/Bab 2/bab 2 (6).jpg" class="chapter-image">
+<img src="images/Bab 2/bab 2 (7).jpg" class="chapter-image">
+</div>
+
+<div style="display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:30px;">
+<a class="back-btn" onclick="openChapter('bab1')">← Bab 1</a>
+<a class="back-btn" onclick="backHome()">Daftar Bab</a>
+<a class="back-btn" onclick="openChapter('bab3')">Bab 3 →</a>
+</div>
+
+</div>
+
+
+<!-- BAB 3 -->
+<div id="bab3" class="chapter-view">
+
+<div class="chapter-content">
+<img src="images/Bab 3/bab 3 (1).jpg" class="chapter-image">
+<img src="images/Bab 3/bab 3 (2).jpg" class="chapter-image">
+<img src="images/Bab 3/bab 3 (3).jpg" class="chapter-image">
+<img src="images/Bab 3/bab 3 (4).jpg" class="chapter-image">
+<img src="images/Bab 3/bab 3 (5).jpg" class="chapter-image">
+<img src="images/Bab 3/bab 3 (6).jpg" class="chapter-image">
+</div>
+
+<div style="display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:30px;">
+<a class="back-btn" onclick="openChapter('bab2')">← Bab 2</a>
+<a class="back-btn" onclick="backHome()">Daftar Bab</a>
+<a class="back-btn" onclick="openChapter('bab4')">Bab 4 →</a>
+</div>
+
+</div>
+
+
+<!-- BAB 4 -->
+<div id="bab4" class="chapter-view">
+
+<div class="chapter-content">
+<img src="images/bab 4/26.png" class="chapter-image">
+<img src="images/bab 4/27.png" class="chapter-image">
+<img src="images/bab 4/28.png" class="chapter-image">
+<img src="images/bab 4/29.png" class="chapter-image">
+<img src="images/bab 4/30.png" class="chapter-image">
+<img src="images/bab 4/31.png" class="chapter-image">
+</div>
+
+<div style="display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:30px;">
+<a class="back-btn" onclick="openChapter('bab3')">← Bab 3</a>
+<a class="back-btn" onclick="backHome()">Daftar Bab</a>
+<a class="back-btn" onclick="openChapter('bab5')">Bab 5 →</a>
+</div>
+
+</div>
+
+
+<!-- BAB 5 -->
+<div id="bab5" class="chapter-view">
+
+<div class="chapter-content">
+<img src="images/bab 5/32.png" class="chapter-image">
+<img src="images/bab 5/33.png" class="chapter-image">
+<img src="images/bab 5/34.png" class="chapter-image">
+<img src="images/bab 5/35.png" class="chapter-image">
+<img src="images/bab 5/36.png" class="chapter-image">
+<img src="images/bab 5/37.png" class="chapter-image">
+</div>
+
+<div style="display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:30px;">
+<a class="back-btn" onclick="openChapter('bab4')">← Bab 4</a>
+<a class="back-btn" onclick="backHome()">Daftar Bab</a>
+</div>
+
+</div>
+
+<script>
+function openChapter(id){
+
+document.getElementById("home").style.display = "none";
+
+document.querySelectorAll(".chapter-view")
+.forEach(ch => ch.style.display = "none");
+
+document.getElementById(id).style.display = "block";
+window.scrollTo(0,0);
+}
+
+function backHome(){
+document.querySelectorAll(".chapter-view")
+.forEach(ch => ch.style.display = "none");
+
+document.getElementById("home").style.display = "block";
+window.scrollTo(0,0);
+}
+</script>
+
+</body>
+</html>
